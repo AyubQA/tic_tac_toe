@@ -8,7 +8,7 @@ import (
 	"strings"
 )
 
-// фигуры в клетке поля
+// Фигуры в клетке поля
 type GameState int
 type BoardField int
 
@@ -73,8 +73,8 @@ func InitBoard() bool {
 
 func printBoard() {
 	fmt.Print("  ")
-	for _ = range boardSize {
-		fmt.Printf("%d, i+1")
+	for i := range boardSize {
+		fmt.Printf("%d", i+1)
 	}
 
 	fmt.Println()
